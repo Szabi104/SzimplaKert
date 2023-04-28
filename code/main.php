@@ -8,6 +8,6 @@
         <title>Szimpla Kert</title>
     </head>
     <body>
-        <h1>Szimpla Kert!</h1>
+        <h1>Szimpla Kert!!!</h1>
     </body>
 </html>
