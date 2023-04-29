@@ -45,6 +45,7 @@
 </form>
 
 <button class="btn btn-primary mt-3">Regisztráció</button>
+<button class="btn btn-primary mt-3">Bejelentkezés</button>
 
 </div>
 
