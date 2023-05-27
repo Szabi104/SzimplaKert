@@ -8,25 +8,7 @@
   </head>
   <body>
 
-  <nav  class="navbar" style="background-color: rgb(0, 179, 0)">
-  <ul class="nav nav-underline">
-  <li>
-    <h1>Szimpla Kert</h1>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="../main.php">Főoldal</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Termékek</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page"  href="./kapcsolat.php">Kapcsolat</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./websites/reglog.php">Bejelentkezés/Regisztráció</a>
-  </li>
-</ul>
-  </nav>
+  <?php include_once('SzimplaKert/others/navbar.php')?>
 
    
 
