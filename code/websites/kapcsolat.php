@@ -8,7 +8,7 @@
     <title>Kapcsolat</title>
 </head>
 <body>
-    <?php include_once('SzimplaKert/others/navbar.php')?>
+<?php include_once('../others/navbar.php')?>
 </body>
 </html>
 

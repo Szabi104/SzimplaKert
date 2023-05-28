@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 
 <body>
 
-<?php include_once('SzimplaKert/others/navbar.php')?>
+<?php include_once('../others/navbar.php')?>
 
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
