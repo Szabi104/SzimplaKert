@@ -1,0 +1,86 @@
+body, html {
+    height: 100%;
+
+  }
+  
+  @font-face {
+    font-family: "titelfont";
+    src: url("/SzimplaKert/code/others/CookieRegular.ttf");
+}
+
+  .bg {
+    
+    background-image: url("/SzimplaKert/images/kert.jpg");
+
+    filter: brightness(50%);
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .nav {
+    position: absolute;
+    z-index: 100;
+    height: 50px;
+    width: 100%;
+
+    background-color: #0000;
+  }
+
+  .navitem{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    
+
+  }
+  .navitem:hover{
+    color: rgb(200, 250, 150);
+  }
+  .content{
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+  }
+
+  .titlepage{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    font-family: titlefont;
+
+  }
+ 
+
+.footer{
+    background-color: white;
+    height: 50vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.location{
+    display:flex;
+    flex-direction: row;
+}
+.locationhalf{
+    width: 30vw;
+    height: 30vh;
+    display:flex;
+    flex-direction: row;
+}

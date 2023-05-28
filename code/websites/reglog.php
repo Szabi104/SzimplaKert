@@ -1,3 +1,21 @@
+<?php
+
+    $db_pass = 'EsXteT/UmicE/61h';
+
+    $db_name = 'SzimplaKert';
+
+    if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) ) {
+        $dbh = new PDO("mysql:host=localhost;dbname=$db_name", $db_name, $db_pass);
+
+        $sql = "INSERT INTO users (name, email, password) 
+            VALUES 
+            ('{$_POST['name']}', '{$_POST['email']}', SHA1('{$_POST['password']}'))
+        ";
+
+        $dbh->query($sql); 
+    }
+?>
+
 <!doctype html>
 <html lang="hu">
   <head>
@@ -27,8 +45,36 @@
 </form>
 
 <button class="btn btn-primary mt-3">Regisztráció</button>
+<?php
+            $dbh = new PDO("mysql:host=localhost;dbname=$db_name", $db_name, $db_pass);
+            $result = $dbh->query("SELECT * FROM users");
+            $users = $result->fetchAll(PDO::FETCH_ASSOC);
+        ?>
 <button class="btn btn-primary mt-3">Bejelentkezés</button>
+<?php
 
+require_once('config.inc.php');
+
+session_start();
+
+if (isset($_POST['email']) && isset($_POST['password'])) {
+    $dbh = new PDO("mysql:host=localhost;dbname=$db_name", $db_name, $db_pass);
+    $sql = "SELECT * FROM users WHERE email = ? AND password = SHA1(?)";
+    $sth = $dbh->prepare($sql);
+    $sth->execute([$_POST['email'], $_POST['password']]);
+    $users = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+    if (count($users) === 1) {
+        $_SESSION['authenticated'] = true;
+        // Redirect to your secure location
+        header('Location: users.php');
+        return;
+    } else {
+        $error = 'Incorrect username or password';
+    }
+}
+
+?>
 </div>
 
    

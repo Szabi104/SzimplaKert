@@ -4,7 +4,7 @@ require_once('config.inc.php');
 
 
 
-<nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 179, 0);">
+<nav class="navbar navbar-expand-lg nav">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
@@ -15,7 +15,7 @@ require_once('config.inc.php');
         <?php foreach( $menu as $key => $menu_item ) { ?>
         <li class="nav-item">
           <a 
-             class ="nav-link active"
+             class ="nav-link active navitem"
              aria-current="page"
              href="<?php echo $menu_item['link'] ?>"
           >
