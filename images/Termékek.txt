@@ -1,0 +1,27 @@
+Vetőmagok:
+	Répa
+	Paradicsom
+	ÉdesPaprika
+	ErősPaprika
+	ChiliPaprika
+	Borsó
+	Fűmag
+
+Facsemeték:
+	Almafa
+	Cseresznyefa
+	Barackfa
+	Körtefa
+
+Trágyák:
+	Műtrágya
+	BioSzarvasmarha Trágya
+
+Eszközök:
+	Kézi lapát
+	Lapát
+	Ásó
+	Metszőolló
+	Locsolókanna
+	Gereblye
+		

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/SzimplaKert/code/others/style.css">
+  <link rel="stylesheet" href="../code/others/style.css">
   <title>Szimplakert</title>
-  <script src="/SzimplaKert/code/others/scroll.js"></script>
+  <script src="others/scroll.js"></script>
 </head>
 
 <body>
-<?php include_once('others/navbar.php')?>
+<?php include_once('../code/others/navbar.php')?>
 
 <div class="content">
   
@@ -23,7 +23,7 @@
 
   <footer class="footer">
   
-  <h2>Elérhetőség</h2>
+  <h2 class="mb-5">Elérhetőség</h2>
   
   <div class="location">
   
@@ -32,21 +32,27 @@
   
   <div class="locationhalf">
     <div class = "koz">
-      <p>Cím:</p>
+      <p class="thick">Telefonszám:</p>
+      <p>+36 30 123 4567</p>
+      <p class="thick">Cím:</p>
     <p>6000, Kecskemét, Izsáki út, 10 </p>
     <p>
-      <button>Útvonaltervezés</button>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=6000%2C%20Kecskem%C3%A9t%2C%20Izs%C3%A1ki%20%C3%BAt%2C%2010" target="_blank">
+      <button>
+       Útvonaltervezés
+      </button>
+      </a>
     </p>
     </div>
     <div class = "koz">
-  <p >Nyitvatartási idő:</p>
-  <p>Hétfő - Péntek:</p>
+  <h5 class="thick">Nyitvatartási idő:</h5>
+  <p class="thick">Hétfő - Péntek:</p>
   <p>8:00 - 12:00</p>
 
-  <p>Szombat</p>
+  <p class="thick">Szombat:</p>
   <p>8:00 - 12:00</p>
 
-  <p>Vasárnap</p>
+  <p class="thick">Vasárnap:</p>
   <p>Zárva</p>
     </div>
   </div>
