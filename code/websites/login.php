@@ -26,9 +26,9 @@
 </form>
 <button type="button" class="btn btn-primary mt-3" >Bejelentkezés</button>
 <p><label class="text-white mt-2" for=""> <a href="signup.php">Még nincs fiókod? Katt ide</a></label></p>
+
 <?php
-/*
-require_once('config.inc.php');
+require_once('../others/config.inc.php');
 
 session_start();
 
@@ -41,14 +41,14 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
     if (count($users) === 1) {
         $_SESSION['authenticated'] = true;
-        // Redirect to your secure location
-        header('Location: users.php');
+       
+        header('Location: termekek.php');
         return;
     } else {
         $error = 'Incorrect username or password';
     }
 }
-*/
+
 ?>
     </div>
     </div>

@@ -128,3 +128,18 @@ a:hover{
 .reglog{
   color: rgb(200, 250, 150);
 }
+.etermekek{
+  display:flex;
+  flex-direction: row;
+}
+
+.kivalaszto{
+    width: 300px;
+}
+
+.termekek{
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+}
