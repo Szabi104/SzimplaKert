@@ -31,15 +31,15 @@
 
   
   <div class="locationhalf">
-    <div>
+    <div class = "koz">
       <p>Cím:</p>
     <p>6000, Kecskemét, Izsáki út, 10 </p>
     <p>
       <button>Útvonaltervezés</button>
     </p>
     </div>
-    <div>
-  <p>Nyitvatartási idő:</p>
+    <div class = "koz">
+  <p >Nyitvatartási idő:</p>
   <p>Hétfő - Péntek:</p>
   <p>8:00 - 12:00</p>
 

@@ -8,7 +8,7 @@ body, html {
     src: url("/SzimplaKert/code/others/CookieRegular.ttf");
 }
 
-  .bg {
+  .bg{
     
     background-image: url("/SzimplaKert/images/kert.jpg");
 
@@ -19,7 +19,20 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .nav {
+
+  .regloghatter{
+    
+    background-image: url("/SzimplaKert/images/reglogbg.jpg");
+
+    filter: brightness(50%);
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav{
     position: absolute;
     z-index: 100;
     height: 50px;
@@ -83,4 +96,9 @@ body, html {
     height: 30vh;
     display:flex;
     flex-direction: row;
+}
+
+.koz{
+    padding-left: 30px;
+    padding-right: 30px;
 }
