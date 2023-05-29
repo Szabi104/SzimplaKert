@@ -2,7 +2,7 @@
 
     $db_pass = '*HaKCSJF.[EOU2Ki';
 
-    $db_name = 'SzimplaKert';
+    $db_name = 'szimplakert';
 
     if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) ) {
         $dbh = new PDO("mysql:host=localhost;dbname=$db_name", $db_name, $db_pass);
@@ -51,9 +51,9 @@
 <button type="button" class="btn btn-primary mt-3">Regisztráció</button>
 
     <?php
-            $dbh = new PDO("mysql:host=localhost;dbname=$db_name", $db_name, $db_pass);
+           /* $dbh = new PDO("mysql:host=localhost;dbname=$db_name", $db_name, $db_pass);
             $result = $dbh->query("SELECT * FROM users");
-            $users = $result->fetchAll(PDO::FETCH_ASSOC);
+            $users = $result->fetchAll(PDO::FETCH_ASSOC);*/
         ?>
 
     </div>
